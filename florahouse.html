@@ -1,0 +1,3290 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FLORA HOUSE | Flower Boutique</title>
+
+<meta name="description"
+content="FLORA HOUSE - Hoa tươi và quà tặng dành cho những khoảnh khắc đặc biệt.">
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffafb;
+    color: #333;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.97);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #eee5e8;
+}
+
+.navbar {
+    max-width: 1200px;
+    min-height: 76px;
+
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #bf5b79;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.logo-flower {
+    font-size: 25px;
+}
+
+.logo span {
+    color: #333;
+}
+
+
+/* NAV */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #444;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #bf5b79;
+}
+
+
+/* CART BUTTON */
+
+.cart-btn {
+    border: none;
+
+    background: #bf5b79;
+    color: white;
+
+    padding: 12px 19px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background: #a94465;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 630px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+
+    background:
+
+        linear-gradient(
+            rgba(255,247,249,0.78),
+            rgba(255,247,249,0.84)
+        ),
+
+        url("https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 800px;
+}
+
+
+.hero-small {
+
+    color: #bf5b79;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+
+    font-family: Georgia, serif;
+
+    color: #b84e70;
+
+    font-size: clamp(44px, 7vw, 74px);
+
+    line-height: 1.08;
+
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.hero-main-btn {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #bf5b79;
+
+    color: white;
+
+    padding: 15px 32px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.hero-main-btn:hover {
+
+    background: #a94465;
+
+    transform: translateY(-3px);
+}
+
+
+.hero-second-btn {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: white;
+
+    color: #bf5b79;
+
+    padding: 15px 32px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    border: 1px solid #e7bdca;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.features {
+
+    background: white;
+
+    border-bottom: 1px solid #f0e4e8;
+}
+
+
+.feature-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 65px 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+
+.feature {
+
+    text-align: center;
+
+    padding: 25px 20px;
+}
+
+
+.feature-icon {
+
+    font-size: 44px;
+
+    margin-bottom: 16px;
+}
+
+
+.feature h3 {
+
+    color: #b84e70;
+
+    margin-bottom: 10px;
+
+    font-family: Georgia, serif;
+}
+
+
+.feature p {
+
+    color: #777;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   GENERAL SECTION
+===================================================== */
+
+.section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 20px;
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-heading .small {
+
+    color: #bf5b79;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.section-heading h2 {
+
+    font-family: Georgia, serif;
+
+    color: #b84e70;
+
+    font-size: 40px;
+
+    margin: 10px 0;
+}
+
+
+.section-heading p {
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   SEARCH / SORT
+===================================================== */
+
+.shop-tools {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.search-box {
+
+    flex: 1;
+
+    min-width: 250px;
+
+    position: relative;
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    padding: 14px 18px 14px 45px;
+
+    border: 1px solid #eadde2;
+
+    border-radius: 30px;
+
+    background: white;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+.search-box input:focus {
+
+    border-color: #bf5b79;
+}
+
+
+.search-icon {
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+.shop-tools select {
+
+    padding: 14px 18px;
+
+    border: 1px solid #eadde2;
+
+    border-radius: 30px;
+
+    background: white;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.categories {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+
+.category-btn {
+
+    border: 1px solid #e5becb;
+
+    background: white;
+
+    color: #ae4e6d;
+
+    padding: 10px 19px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.category-btn:hover,
+.category-btn.active {
+
+    background: #bf5b79;
+
+    color: white;
+
+    border-color: #bf5b79;
+}
+
+
+/* =====================================================
+   PRODUCT GRID
+===================================================== */
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+}
+
+
+.product-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 13px 30px rgba(0,0,0,0.11);
+}
+
+
+.product-image-wrap {
+
+    position: relative;
+}
+
+
+.product-image {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.product-tag {
+
+    position: absolute;
+
+    top: 13px;
+
+    left: 13px;
+
+    background: white;
+
+    color: #bf5b79;
+
+    padding: 7px 11px;
+
+    border-radius: 15px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.product-info {
+
+    padding: 20px;
+}
+
+
+.product-category {
+
+    color: #bf5b79;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+}
+
+
+.product-name {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.product-description {
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    min-height: 40px;
+}
+
+
+.product-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+
+.product-price {
+
+    color: #b84e70;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.add-btn {
+
+    border: none;
+
+    background: #f7e0e7;
+
+    color: #aa4665;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.add-btn:hover {
+
+    background: #bf5b79;
+
+    color: white;
+}
+
+
+.no-products {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    color: #888;
+
+    padding: 60px;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section {
+
+    background: #fff1f5;
+}
+
+
+.about {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.about-image {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+
+.about-text .small {
+
+    color: #bf5b79;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+.about-text h2 {
+
+    font-family: Georgia, serif;
+
+    color: #b84e70;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin: 12px 0 22px;
+}
+
+
+.about-text p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    text-align: center;
+
+    background: white;
+
+    padding: 85px 20px;
+}
+
+
+.contact h2 {
+
+    font-family: Georgia, serif;
+
+    color: #b84e70;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+
+.contact p {
+
+    color: #666;
+
+    margin: 10px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #292529;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+.footer-logo {
+
+    font-family: Georgia, serif;
+
+    color: #f0a5bb;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+footer p {
+
+    color: #ccc;
+
+    font-size: 13px;
+
+    margin: 6px;
+}
+
+
+/* =====================================================
+   CART
+===================================================== */
+
+.cart-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.45);
+
+    z-index: 3000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+
+.cart-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.cart-panel {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    width: 440px;
+
+    max-width: 100%;
+
+    height: 100%;
+
+    background: white;
+
+    padding: 25px;
+
+    overflow-y: auto;
+
+    transform: translateX(100%);
+
+    transition: 0.3s;
+}
+
+
+.cart-overlay.active .cart-panel {
+
+    transform: translateX(0);
+}
+
+
+.cart-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.cart-header h2 {
+
+    color: #b84e70;
+
+    font-family: Georgia, serif;
+}
+
+
+.close-cart {
+
+    border: none;
+
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CART ITEMS
+===================================================== */
+
+.cart-item {
+
+    display: flex;
+
+    gap: 13px;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 18px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.cart-item img {
+
+    width: 78px;
+
+    height: 78px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+.cart-item-info {
+
+    flex: 1;
+}
+
+
+.cart-item-info h4 {
+
+    font-size: 14px;
+
+    margin-bottom: 6px;
+}
+
+
+.cart-item-price {
+
+    color: #b84e70;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+
+.quantity {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 9px;
+}
+
+
+.quantity button {
+
+    width: 25px;
+
+    height: 25px;
+
+    border: none;
+
+    background: #f5dce4;
+
+    color: #a94465;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.remove-btn {
+
+    border: none;
+
+    background: none;
+
+    color: #bf5b79;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+.empty-cart {
+
+    text-align: center;
+
+    color: #888;
+
+    padding: 60px 10px;
+}
+
+
+.empty-cart-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CART SUMMARY
+===================================================== */
+
+.cart-summary {
+
+    border-top: 2px solid #eee;
+
+    padding-top: 20px;
+
+    margin-top: 20px;
+}
+
+
+.summary-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.summary-total {
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    color: #b84e70;
+}
+
+
+.checkout-btn {
+
+    width: 100%;
+
+    border: none;
+
+    background: #bf5b79;
+
+    color: white;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+
+.checkout-btn:hover {
+
+    background: #a94465;
+}
+
+
+/* =====================================================
+   CHECKOUT FORM
+===================================================== */
+
+.checkout-form {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #eee;
+}
+
+
+.checkout-form.active {
+
+    display: block;
+}
+
+
+.checkout-form h3 {
+
+    color: #b84e70;
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 18px;
+}
+
+
+.checkout-form label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+
+.checkout-form input:focus,
+.checkout-form textarea:focus,
+.checkout-form select:focus {
+
+    border-color: #bf5b79;
+}
+
+
+.checkout-form textarea {
+
+    height: 80px;
+
+    resize: vertical;
+}
+
+
+.place-order-btn {
+
+    width: 100%;
+
+    border: none;
+
+    background: #333;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   SUCCESS MODAL
+===================================================== */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.5);
+
+    z-index: 4000;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+.modal-overlay.active {
+
+    display: flex;
+}
+
+
+.modal {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    text-align: center;
+}
+
+
+.success-icon {
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+
+.modal h2 {
+
+    color: #b84e70;
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 12px;
+}
+
+
+.modal p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+.modal button {
+
+    border: none;
+
+    background: #bf5b79;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .products {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        min-height: auto;
+
+        padding: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    nav {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 17px;
+    }
+
+
+    nav a {
+
+        font-size: 13px;
+    }
+
+
+    .hero {
+
+        min-height: 550px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 43px;
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .products {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .shop-tools {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .search-box {
+
+        width: 100%;
+    }
+
+
+    .shop-tools select {
+
+        width: 100%;
+    }
+
+
+    .about-image {
+
+        height: 330px;
+    }
+
+
+    .about-text h2 {
+
+        font-size: 32px;
+    }
+
+
+    .cart-panel {
+
+        width: 100%;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<div class="navbar">
+
+
+<div class="logo">
+
+<span class="logo-flower">🌷</span>
+
+FLORA <span>HOUSE</span>
+
+</div>
+
+
+<nav>
+
+<a href="#home">
+Trang chủ
+</a>
+
+<a href="#products">
+Cửa hàng
+</a>
+
+<a href="#about">
+Về chúng tôi
+</a>
+
+<a href="#contact">
+Liên hệ
+</a>
+
+</nav>
+
+
+<button
+class="cart-btn"
+onclick="openCart()">
+
+🛒 Giỏ hàng
+(
+<span id="cartCount">0</span>
+)
+
+</button>
+
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+class="hero"
+id="home"
+>
+
+<div class="hero-content">
+
+
+<div class="hero-small">
+
+FLORA HOUSE · FLOWER BOUTIQUE
+
+</div>
+
+
+<h1>
+
+Flowers<br>
+
+for every feeling.
+
+</h1>
+
+
+<p>
+
+Những đóa hoa tươi được chọn lựa và
+thiết kế dành riêng cho những khoảnh khắc
+đáng nhớ của bạn.
+
+</p>
+
+
+<div class="hero-buttons">
+
+
+<a
+href="#products"
+class="hero-main-btn">
+
+Khám phá bộ sưu tập
+
+</a>
+
+
+<a
+href="#about"
+class="hero-second-btn">
+
+Về Flora House
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURES
+===================================================== -->
+
+<section class="features">
+
+
+<div class="feature-grid">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🌸
+</div>
+
+<h3>
+Hoa tươi mỗi ngày
+</h3>
+
+<p>
+Hoa được tuyển chọn cẩn thận
+để đảm bảo độ tươi và vẻ đẹp.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🚚
+</div>
+
+<h3>
+Giao hàng tận nơi
+</h3>
+
+<p>
+Giao hoa nhanh chóng và cẩn thận
+đến địa chỉ bạn yêu cầu.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🎁
+</div>
+
+<h3>
+Gói quà tinh tế
+</h3>
+
+<p>
+Mỗi bó hoa đều được chăm chút
+để trở thành một món quà đặc biệt.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section
+class="section"
+id="products"
+>
+
+
+<div class="section-heading">
+
+<div class="small">
+FLORA COLLECTION
+</div>
+
+<h2>
+Bộ sưu tập hoa
+</h2>
+
+<p>
+Chọn một bó hoa để gửi gắm điều bạn muốn nói.
+</p>
+
+</div>
+
+
+
+<!-- SEARCH -->
+
+<div class="shop-tools">
+
+
+<div class="search-box">
+
+<span class="search-icon">
+🔍
+</span>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Tìm kiếm hoa..."
+oninput="renderProducts()"
+>
+
+</div>
+
+
+<select
+id="sortSelect"
+onchange="renderProducts()"
+>
+
+<option value="default">
+Sắp xếp sản phẩm
+</option>
+
+<option value="low">
+Giá thấp → cao
+</option>
+
+<option value="high">
+Giá cao → thấp
+</option>
+
+</select>
+
+
+</div>
+
+
+
+<!-- CATEGORY -->
+
+<div class="categories">
+
+
+<button
+class="category-btn active"
+onclick="filterCategory('all',this)"
+>
+
+Tất cả
+
+</button>
+
+
+<button
+class="category-btn"
+onclick="filterCategory('rose',this)"
+>
+
+🌹 Hoa hồng
+
+</button>
+
+
+<button
+class="category-btn"
+onclick="filterCategory('tulip',this)"
+>
+
+🌷 Tulip
+
+</button>
+
+
+<button
+class="category-btn"
+onclick="filterCategory('sunflower',this)"
+>
+
+🌻 Hướng dương
+
+</button>
+
+
+<button
+class="category-btn"
+onclick="filterCategory('bouquet',this)"
+>
+
+💐 Bó hoa
+
+</button>
+
+
+</div>
+
+
+
+<!-- PRODUCT LIST -->
+
+<div
+class="products"
+id="productList"
+></div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+class="about-section"
+id="about"
+>
+
+
+<div class="about">
+
+
+<img
+class="about-image"
+src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1000&q=90"
+alt="Flora House"
+/>
+
+
+<div class="about-text">
+
+
+<div class="small">
+
+ABOUT FLORA HOUSE
+
+</div>
+
+
+<h2>
+
+Một chút yêu thương
+được gửi qua hoa.
+
+</h2>
+
+
+<p>
+
+FLORA HOUSE là một flower boutique
+dành cho những người yêu hoa và
+trân trọng những khoảnh khắc đẹp.
+
+</p>
+
+
+<p>
+
+Chúng tôi tin rằng hoa không chỉ là
+một món quà. Một bó hoa có thể thay
+cho lời yêu thương, lời cảm ơn,
+lời chúc hay đơn giản là một lời
+nhắn rằng "Mình luôn nhớ đến bạn".
+
+</p>
+
+
+<p>
+
+Từ những bông hoa tươi mỗi ngày,
+FLORA HOUSE tạo nên những thiết kế
+nhẹ nhàng, tinh tế và phù hợp với
+từng dịp đặc biệt.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+class="contact"
+id="contact"
+>
+
+
+<h2>
+
+Gửi yêu thương cùng
+FLORA HOUSE
+
+</h2>
+
+
+<p>
+📍 Hà Nội, Việt Nam
+</p>
+
+
+<p>
+📞 0123 456 789
+</p>
+
+
+<p>
+📧 florahouse@gmail.com
+</p>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+<div class="footer-logo">
+
+🌷 FLORA HOUSE
+
+</div>
+
+
+<p>
+
+Flower Boutique · Fresh Flowers · Gifts
+
+</p>
+
+
+<p>
+
+© 2026 FLORA HOUSE. All rights reserved.
+
+</p>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     CART
+===================================================== -->
+
+<div
+class="cart-overlay"
+id="cartOverlay"
+onclick="closeCartOutside(event)"
+>
+
+
+<div
+class="cart-panel"
+onclick="event.stopPropagation()"
+>
+
+
+<div class="cart-header">
+
+
+<h2>
+Giỏ hàng
+</h2>
+
+
+<button
+class="close-cart"
+onclick="closeCart()"
+>
+
+×
+
+</button>
+
+
+</div>
+
+
+
+<div id="cartItems"></div>
+
+
+
+<div class="cart-summary">
+
+
+<div class="summary-row">
+
+<span>
+Tạm tính
+</span>
+
+<span id="subtotal">
+0đ
+</span>
+
+</div>
+
+
+
+<div class="summary-row">
+
+<span>
+Phí giao hàng
+</span>
+
+<span>
+30.000đ
+</span>
+
+</div>
+
+
+
+<div
+class="summary-row summary-total"
+>
+
+<span>
+Tổng
+</span>
+
+<span id="cartTotal">
+0đ
+</span>
+
+</div>
+
+
+
+<button
+class="checkout-btn"
+onclick="showCheckout()"
+>
+
+Tiến hành đặt hàng
+
+</button>
+
+
+
+<!-- CHECKOUT -->
+
+<div
+class="checkout-form"
+id="checkoutForm"
+>
+
+
+<h3>
+Thông tin giao hàng
+</h3>
+
+
+<label>
+Họ và tên *
+</label>
+
+<input
+type="text"
+id="customerName"
+placeholder="Nguyễn Văn A"
+>
+
+
+<label>
+Số điện thoại *
+</label>
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="0123456789"
+>
+
+
+<label>
+Địa chỉ nhận hàng *
+</label>
+
+<input
+type="text"
+id="customerAddress"
+placeholder="Số nhà, đường, quận/huyện..."
+>
+
+
+<label>
+Phương thức thanh toán
+</label>
+
+<select id="paymentMethod">
+
+<option value="cod">
+Thanh toán khi nhận hàng (COD)
+</option>
+
+<option value="bank">
+Chuyển khoản ngân hàng
+</option>
+
+</select>
+
+
+<label>
+Ghi chú
+</label>
+
+<textarea
+id="customerNote"
+placeholder="Ví dụ: Giao vào buổi chiều..."
+></textarea>
+
+
+<button
+class="place-order-btn"
+onclick="placeOrder()"
+>
+
+Xác nhận đặt hàng
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     SUCCESS MODAL
+===================================================== -->
+
+<div
+class="modal-overlay"
+id="successModal"
+>
+
+
+<div class="modal">
+
+
+<div class="success-icon">
+🌷
+</div>
+
+
+<h2>
+Đặt hàng thành công!
+</h2>
+
+
+<p>
+
+Cảm ơn bạn đã lựa chọn
+<strong>FLORA HOUSE</strong>.
+
+<br><br>
+
+Chúng tôi sẽ liên hệ với bạn
+sớm nhất để xác nhận đơn hàng.
+
+</p>
+
+
+<button
+onclick="closeSuccess()"
+>
+
+Tiếp tục mua hàng
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   PRODUCT DATA
+===================================================== */
+
+const products = [
+
+
+{
+id: 1,
+
+name: "Bó Hồng Đỏ Valentine",
+
+category: "rose",
+
+categoryName: "Hoa hồng",
+
+price: 350000,
+
+tag: "Bán chạy",
+
+description:
+"Hoa hồng đỏ tượng trưng cho tình yêu.",
+
+image:
+"https://images.unsplash.com/photo-1548586196-aa5803b77379?auto=format&fit=crop&w=800&q=90"
+
+},
+
+
+{
+id: 2,
+
+name: "Hồng Pastel Dịu Dàng",
+
+category: "rose",
+
+categoryName: "Hoa hồng",
+
+price: 390000,
+
+tag: "Mới",
+
+description:
+"Sắc hồng nhẹ nhàng và tinh tế.",
+
+image:
+"https://images.unsplash.com/photo-1495231916356-a86217efff12?auto=format&fit=crop&w=800&q=90"
+
+},
+
+
+{
+id: 3,
+
+name: "Tulip Hồng Sweet Love",
+
+category: "tulip",
+
+categoryName: "Hoa tulip",
+
+price: 420000,
+
+tag: "Hot",
+
+description:
+"Tulip hồng ngọt ngào dành cho người đặc biệt.",
+
+image:
+"https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=800&q=90"
+
+},
+
+
+{
+id: 4,
+
+name: "Tulip Trắng Elegant",
+
+category: "tulip",
+
+categoryName: "Hoa tulip",
+
+price: 450000,
+
+tag: "",
+
+description:
+"Vẻ đẹp thanh lịch và thuần khiết.",
+
+image:
+"https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=800&q=90"
+
+},
+
+
+{
+id: 5,
+
+name: "Hướng Dương Sunshine",
+
+category: "sunflower",
+
+categoryName: "Hoa hướng dương",
+
+price: 280000,
+
+tag: "Bán chạy",
+
+description:
+"Mang năng lượng tích cực và niềm vui.",
+
+image:
+"https://images.unsplash.com/photo-1597848212624-e19c6f2b2f5f?auto=format&fit=crop&w=800&q=90"
+
+},
+
+
+{
+id: 6,
+
+name: "Bó Hoa Mùa Hè",
+
+category: "bouquet",
+
+categoryName: "Bó hoa",
+
+price: 480000,
+
+tag: "Mới",
+
+description:
+"Sự kết hợp rực rỡ của nhiều loại hoa.",
+
+image:
+"https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&q=90"
+
+},
+
+
+{
+id: 7,
+
+name: "Bó Hoa Pastel",
+
+category: "bouquet",
+
+categoryName: "Bó hoa",
+
+price: 520000,
+
+tag: "Hot",
+
+description:
+"Bó hoa pastel nhẹ nhàng và hiện đại.",
+
+image:
+"https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=800&q=90"
+
+},
+
+
+{
+id: 8,
+
+name: "Hồng Trắng Elegant",
+
+category: "rose",
+
+categoryName: "Hoa hồng",
+
+price: 430000,
+
+tag: "",
+
+description:
+"Hoa hồng trắng thanh lịch và tinh tế.",
+
+image:
+"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=90"
+
+}
+
+
+];
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+let currentCategory = "all";
+
+
+let cart =
+JSON.parse(
+localStorage.getItem("floraHouseCart")
+) || [];
+
+
+
+/* =====================================================
+   FORMAT MONEY
+===================================================== */
+
+function formatMoney(number) {
+
+return number.toLocaleString("vi-VN") + "đ";
+
+}
+
+
+
+/* =====================================================
+   RENDER PRODUCTS
+===================================================== */
+
+function renderProducts() {
+
+
+const productList =
+document.getElementById("productList");
+
+
+const search =
+document
+.getElementById("searchInput")
+.value
+.toLowerCase()
+.trim();
+
+
+const sort =
+document
+.getElementById("sortSelect")
+.value;
+
+
+
+let filtered =
+products.filter(product => {
+
+
+const matchCategory =
+currentCategory === "all" ||
+product.category === currentCategory;
+
+
+const matchSearch =
+product.name
+.toLowerCase()
+.includes(search);
+
+
+return matchCategory &&
+matchSearch;
+
+});
+
+
+
+/* SORT */
+
+if(sort === "low") {
+
+filtered.sort(
+(a,b) => a.price - b.price
+);
+
+}
+
+
+if(sort === "high") {
+
+filtered.sort(
+(a,b) => b.price - a.price
+);
+
+}
+
+
+
+/* NO PRODUCTS */
+
+if(filtered.length === 0) {
+
+productList.innerHTML = `
+
+<div class="no-products">
+
+Không tìm thấy sản phẩm phù hợp 🌷
+
+</div>
+
+`;
+
+return;
+
+}
+
+
+
+/* PRODUCT HTML */
+
+productList.innerHTML =
+
+filtered.map(product => `
+
+<div class="product-card">
+
+
+<div class="product-image-wrap">
+
+
+<img
+class="product-image"
+src="${product.image}"
+alt="${product.name}"
+>
+
+
+${
+product.tag
+?
+`
+<div class="product-tag">
+${product.tag}
+</div>
+`
+:
+""
+}
+
+
+</div>
+
+
+
+<div class="product-info">
+
+
+<div class="product-category">
+
+${product.categoryName}
+
+</div>
+
+
+<div class="product-name">
+
+${product.name}
+
+</div>
+
+
+<div class="product-description">
+
+${product.description}
+
+</div>
+
+
+
+<div class="product-bottom">
+
+
+<div class="product-price">
+
+${formatMoney(product.price)}
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart(${product.id})"
+>
+
++ Thêm
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+`).join("");
+
+}
+
+
+
+/* =====================================================
+   CATEGORY FILTER
+===================================================== */
+
+function filterCategory(category, button) {
+
+
+currentCategory = category;
+
+
+document
+.querySelectorAll(".category-btn")
+.forEach(btn => {
+
+btn.classList.remove("active");
+
+});
+
+
+button.classList.add("active");
+
+
+renderProducts();
+
+}
+
+
+
+/* =====================================================
+   ADD TO CART
+===================================================== */
+
+function addToCart(productId) {
+
+
+const product =
+products.find(
+item => item.id === productId
+);
+
+
+const existing =
+cart.find(
+item => item.id === productId
+);
+
+
+
+if(existing) {
+
+existing.quantity++;
+
+}
+
+else {
+
+cart.push({
+
+id: product.id,
+
+name: product.name,
+
+price: product.price,
+
+image: product.image,
+
+quantity: 1
+
+});
+
+}
+
+
+saveCart();
+
+renderCart();
+
+openCart();
+
+}
+
+
+
+/* =====================================================
+   SAVE CART
+===================================================== */
+
+function saveCart() {
+
+localStorage.setItem(
+"floraHouseCart",
+JSON.stringify(cart)
+);
+
+}
+
+
+
+/* =====================================================
+   RENDER CART
+===================================================== */
+
+function renderCart() {
+
+
+const cartItems =
+document.getElementById("cartItems");
+
+
+const cartCount =
+document.getElementById("cartCount");
+
+
+const subtotalElement =
+document.getElementById("subtotal");
+
+
+const totalElement =
+document.getElementById("cartTotal");
+
+
+
+/* COUNT */
+
+const totalQuantity =
+cart.reduce(
+(sum,item) =>
+sum + item.quantity,
+0
+);
+
+
+cartCount.textContent =
+totalQuantity;
+
+
+
+/* EMPTY */
+
+if(cart.length === 0) {
+
+
+cartItems.innerHTML = `
+
+<div class="empty-cart">
+
+<div class="empty-cart-icon">
+
+🛒
+
+</div>
+
+<h3>
+
+Giỏ hàng đang trống
+
+</h3>
+
+<p>
+
+Hãy chọn một bó hoa thật đẹp nhé!
+
+</p>
+
+</div>
+
+`;
+
+
+subtotalElement.textContent =
+"0đ";
+
+
+totalElement.textContent =
+"0đ";
+
+
+return;
+
+}
+
+
+
+/* CART ITEMS */
+
+cartItems.innerHTML =
+
+cart.map(item => `
+
+<div class="cart-item">
+
+
+<img
+src="${item.image}"
+alt="${item.name}"
+>
+
+
+<div class="cart-item-info">
+
+
+<h4>
+
+${item.name}
+
+</h4>
+
+
+<div class="cart-item-price">
+
+${formatMoney(item.price)}
+
+</div>
+
+
+<div class="quantity">
+
+
+<button
+onclick="changeQuantity(${item.id},-1)"
+>
+
+−
+
+</button>
+
+
+<span>
+
+${item.quantity}
+
+</span>
+
+
+<button
+onclick="changeQuantity(${item.id},1)"
+>
+
++
+
+</button>
+
+
+</div>
+
+
+<button
+class="remove-btn"
+onclick="removeFromCart(${item.id})"
+>
+
+Xóa
+
+</button>
+
+
+</div>
+
+
+</div>
+
+`).join("");
+
+
+
+/* TOTAL */
+
+const subtotal =
+cart.reduce(
+(sum,item) =>
+sum +
+item.price *
+item.quantity,
+0
+);
+
+
+const shipping =
+subtotal > 0
+? 30000
+: 0;
+
+
+const total =
+subtotal +
+shipping;
+
+
+subtotalElement.textContent =
+formatMoney(subtotal);
+
+
+totalElement.textContent =
+formatMoney(total);
+
+}
+
+
+
+/* =====================================================
+   CHANGE QUANTITY
+===================================================== */
+
+function changeQuantity(productId, change) {
+
+
+const item =
+cart.find(
+item => item.id === productId
+);
+
+
+if(!item) return;
+
+
+item.quantity += change;
+
+
+if(item.quantity <= 0) {
+
+cart =
+cart.filter(
+item => item.id !== productId
+);
+
+}
+
+
+saveCart();
+
+renderCart();
+
+}
+
+
+
+/* =====================================================
+   REMOVE
+===================================================== */
+
+function removeFromCart(productId) {
+
+
+cart =
+cart.filter(
+item => item.id !== productId
+);
+
+
+saveCart();
+
+renderCart();
+
+}
+
+
+
+/* =====================================================
+   OPEN CART
+===================================================== */
+
+function openCart() {
+
+
+document
+.getElementById("cartOverlay")
+.classList.add("active");
+
+
+document.body.style.overflow =
+"hidden";
+
+}
+
+
+
+/* =====================================================
+   CLOSE CART
+===================================================== */
+
+function closeCart() {
+
+
+document
+.getElementById("cartOverlay")
+.classList.remove("active");
+
+
+document.body.style.overflow =
+"";
+
+}
+
+
+
+/* =====================================================
+   CLOSE OUTSIDE
+===================================================== */
+
+function closeCartOutside(event) {
+
+
+if(
+event.target.id ===
+"cartOverlay"
+) {
+
+closeCart();
+
+}
+
+}
+
+
+
+/* =====================================================
+   CHECKOUT
+===================================================== */
+
+function showCheckout() {
+
+
+if(cart.length === 0) {
+
+alert(
+"Giỏ hàng của bạn đang trống!"
+);
+
+return;
+
+}
+
+
+document
+.getElementById("checkoutForm")
+.classList.add("active");
+
+
+document
+.getElementById("checkoutForm")
+.scrollIntoView({
+
+behavior: "smooth",
+
+block: "nearest"
+
+});
+
+}
+
+
+
+/* =====================================================
+   PLACE ORDER
+===================================================== */
+
+function placeOrder() {
+
+
+const name =
+document
+.getElementById("customerName")
+.value
+.trim();
+
+
+const phone =
+document
+.getElementById("customerPhone")
+.value
+.trim();
+
+
+const address =
+document
+.getElementById("customerAddress")
+.value
+.trim();
+
+
+const payment =
+document
+.getElementById("paymentMethod")
+.value;
+
+
+const note =
+document
+.getElementById("customerNote")
+.value
+.trim();
+
+
+
+/* VALIDATION */
+
+if(!name) {
+
+alert(
+"Vui lòng nhập họ và tên."
+);
+
+return;
+
+}
+
+
+if(!phone) {
+
+alert(
+"Vui lòng nhập số điện thoại."
+);
+
+return;
+
+}
+
+
+if(!address) {
+
+alert(
+"Vui lòng nhập địa chỉ nhận hàng."
+);
+
+return;
+
+}
+
+
+if(
+phone.length < 9 ||
+phone.length > 11
+) {
+
+alert(
+"Số điện thoại không hợp lệ."
+);
+
+return;
+
+}
+
+
+
+/* CREATE ORDER */
+
+const order = {
+
+
+orderId:
+"FLORA-" +
+Date.now(),
+
+
+customer: {
+
+name: name,
+
+phone: phone,
+
+address: address,
+
+payment: payment,
+
+note: note
+
+},
+
+
+products: cart,
+
+
+createdAt:
+new Date()
+.toLocaleString("vi-VN")
+
+
+};
+
+
+
+/*
+
+Đơn hàng hiện được lưu
+trong console để demo.
+
+*/
+
+console.log(
+"FLORA HOUSE ORDER:",
+order
+);
+
+
+
+/* CLEAR */
+
+cart = [];
+
+
+saveCart();
+
+
+renderCart();
+
+
+
+/* RESET */
+
+document
+.getElementById("customerName")
+.value = "";
+
+
+document
+.getElementById("customerPhone")
+.value = "";
+
+
+document
+.getElementById("customerAddress")
+.value = "";
+
+
+document
+.getElementById("customerNote")
+.value = "";
+
+
+
+document
+.getElementById("checkoutForm")
+.classList.remove("active");
+
+
+
+closeCart();
+
+
+
+/* SUCCESS */
+
+document
+.getElementById("successModal")
+.classList.add("active");
+
+}
+
+
+
+/* =====================================================
+   CLOSE SUCCESS
+===================================================== */
+
+function closeSuccess() {
+
+
+document
+.getElementById("successModal")
+.classList.remove("active");
+
+}
+
+
+
+/* =====================================================
+   INITIALIZE
+===================================================== */
+
+renderProducts();
+
+renderCart();
+
+</script>
+
+
+</body>
+</html>
+```
